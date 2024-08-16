@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<table>
+    <tr>
+        <td>Amount</td>
+        <td>From Currency</td>
+        <td>To Currency</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="a"></td>
+        <td><select id="from">
+            <option value="vnd">VietNam</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><select id="to">
+            <option value="vnd">VietNam</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><button onclick="convert()">Convert</button></td>
+    </tr>
+</table>
+<script>
+    function convert() {
+        let geta = document.getElementById('a').value;
+        let get_from = document.getElementById('from').value;
+        let get_to = document.getElementById('to').value;
+        if (get_from === get_to) {
+             alert(geta);
+        }
+          else if(get_from==="vnd" && get_to==="usd"){
+            alert(geta/24000);
+
+        }
+         else if(get_from==="vnd" && get_to==="usd") {
+            alert(24000 * geta) ;
+        }
+
+    }
+</script>
 </body>
 </html>

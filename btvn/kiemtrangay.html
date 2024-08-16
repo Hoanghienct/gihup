@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<input type="number" id="date">
+<button onclick="thu()">kiem tra</button>
+<script>
+function thu(){
+    let a= parseFloat(document.getElementById('date').value)
+
+if (a==1){
+     document.write('chủ nhật')
+}
+else if(a==2){
+    document.write('thứ thứ 2');
+
+}
+else if(a==3){
+    document.write('thứ 3');
+}
+else if(a==4){
+    document.write('thứ 4');
+}else if(a==5){
+    document.write('thứ 5');
+}else if(a==6){
+    document.write('thứ 6');
+}else if(a==7){
+    document.write('thứ 7');
+
+}
+else {
+    alert('Không phải ngày trong tuần')
+}
+
+}
+
+</script>
 </body>
 </html>

@@ -1,0 +1,11 @@
+select {
+    background-color: #f0f0f0; /* Màu nền */
+    color: brown; /* Màu chữ */
+    border: 1px solid #ccc; /* Màu viền */
+    padding: 5px; /* Khoảng cách bên trong */
+    border-radius: 5px; /* Bo góc */
+}
+select option {
+    background-color: #ffffff; /* Màu nền của tùy chọn */
+    color: #333333; /* Màu chữ của tùy chọn */
+}
